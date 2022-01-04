@@ -30,18 +30,22 @@ h1, h2, h3, h4 {
 
 @media (max-width: 700px) {
   .table {
-    width: 85%;
+    width: 95%;
     margin: 20px 0 10px 0;
   }
 
   .section-table {
-    width: 90%;
+    width: 100%;
     margin: 20px 0 10px 0;
   }
 
   .p-Headling {
-    font-size: 18px;
+    font-size: 24px;
     margin:  80px 0 20px 0;
+  }
+
+  nav {
+    width: 95%;
   }
 }
 
