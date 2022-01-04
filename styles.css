@@ -28,7 +28,7 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 820px) {
   body {
     max-width: 812px;
   }
@@ -48,14 +48,16 @@ h1, h2, h3, h4 {
     margin:  80px 0 20px 0;
   }
   
-    .fa fa-bars menu-icon:active {
+   .fa fa-bars menu-icon:active {
     tranform: rotate(90deg);
-  }
+   }
   
-  nav {
-    width: 812px;
-  }
-  
+   nav {
+     width: 812px;
+   }
+   
+   
+
 }
 
 /**  Header  **/
