@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
   position: fixed;
   width: 100%;
   min-width: 525px;
-  background-color: grey;
+  background-color: #aaaaaa;
   height:54px;
   align-items: center;
   top: 0;
@@ -71,8 +71,8 @@ h1, h2, h3, h4 {
 }
 
 .a-item:hover {
-  color:#00342C;
-  font-size:28px;
+  color: lightskyblue;
+  font-size: 28px;
 }
 
 .a-item:focus {
@@ -162,23 +162,4 @@ h1, h2, h3, h4 {
 
 .table tbody tr:nth-child(even){
   background: #f3f3f3;
-}
-
-/**  Work in Progress  **/
-
-.Work-in-progress p {
-  color: black;
-  font-size: 32px;
-  text-align: center;
-  margin: 0;
-  font-weight: bold;
-}
-
-.Work-in-progress {
-  width: 300px;
-  height: 300px;
-  margin: 60px 0 0 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }

@@ -4,7 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="mobile.css">
   <title>Wrench Part List</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(window).bind("resize", resizeWindow);
+    function resizeWindow(e){
+      var newWindowWidth = $(window).width();
+
+      // Если ширина меньше 600 px, используется таблица стилей для мобильного
+      if(newWindowWidth < 600){
+        $("link[rel=stylesheet]").attr({href : "mobile.css"});
+      } else if(newWindowWidth > 600){
+        // Если ширина больше 600 px, используется таблица стилей для десктопа
+        $("link[rel=stylesheet]").attr({href : "style.css"});
+      }
+    }
+  });
+</script>
 </head>
 <body>
   <header class="header-container">
