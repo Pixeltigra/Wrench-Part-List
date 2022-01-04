@@ -1,6 +1,6 @@
 
 body{
-  min-width: 525px;
+  min-width: 450px;
   margin: 0 auto;
   font-family: Roboto, sans-serif;
 }
@@ -10,9 +10,10 @@ body{
 }
 
 h1, h2, h3, h4 {
-  min-width: 525px;
-  max-width: 700px;
+  min-width: 400px;
+  max-width: 600px;
 }
+
 
 .img-logo {
   width: 250px;
@@ -27,14 +28,115 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+@media (max-width: 700px) {
+  .table {
+    width: 85%;
+    margin: 20px 0 10px 0;
+  }
+
+  .section-table {
+    width: 100%;
+    margin: 20px 0 10px 0;
+  }
+
+  .p-Headling {
+    font-size: 18px;
+    margin:  80px 0 20px 0;
+  }
+}
+
 /**  Header  **/
+
+header {
+    height: 70px;
+    background-color: #22292F;
+    padding: 10px 0;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.menu-icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+nav {
+    position: absolute;
+    background-color: #3D4852;
+    top:70px;
+    left:0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    /* Add your custom styles below to change appearance of links */
+    color: #dae1e7;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+nav ul li a:hover, nav ul li a:focus {
+    color: #eb6f4a;
+}
+#checkbox {
+    display: none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 768px) { 
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 70px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-left: 20px;
+    }
+}
+
+/**
 
 .header-container {
   display: flex;  
   position: fixed;
   width: 100%;
   min-width: 525px;
-  background-color: grey;
+  background-color: #aaaaaa;
   height:54px;
   align-items: center;
   top: 0;
@@ -71,14 +173,16 @@ h1, h2, h3, h4 {
 }
 
 .a-item:hover {
-  color:#00342C;
-  font-size:28px;
+  color: lightskyblue;
+  font-size: 28px;
 }
 
 .a-item:focus {
   outline: none;
   color: lightskyblue;
 }
+
+**/
 
 /**  CheckBox  **/
 
@@ -123,13 +227,13 @@ h1, h2, h3, h4 {
 
 /**  List  **/
 
+/**
 .section-table {
   margin: 0 25% 2% 25%;
 }
+**/
 
 .table {
-  min-width: 525px;
-  max-width: 700px;
   border: none;
 }
 
@@ -162,23 +266,4 @@ h1, h2, h3, h4 {
 
 .table tbody tr:nth-child(even){
   background: #f3f3f3;
-}
-
-/**  Work in Progress  **/
-
-.Work-in-progress p {
-  color: black;
-  font-size: 32px;
-  text-align: center;
-  margin: 0;
-  font-weight: bold;
-}
-
-.Work-in-progress {
-  width: 300px;
-  height: 300px;
-  margin: 60px 0 0 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
