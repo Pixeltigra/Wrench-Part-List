@@ -55,6 +55,10 @@ h1, h2, h3, h4 {
   .menu-wrap {
     width: 94%;
   }
+
+  header {
+    width: 94%;
+  }
 }
 
 /**  Header  **/
