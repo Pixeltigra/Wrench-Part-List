@@ -29,31 +29,23 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 700px) {
+  body {
+    max-width: 812px;
+  }
+
   .table {
     width: 100%;
     margin: 20px 0 10px 0;
   }
 
   .section-table {
-    width: 94%;
+    width: 100%;
     margin: 20px 0 10px 0;
   }
 
   .p-Headling {
     font-size: 24px;
     margin:  80px 0 20px 0;
-  }
-
-  nav {
-    width: 94%;
-  }
-
-  .menu-wrap {
-    width: 93.5%;
-  }
-
-  header {
-    width: 93.5%;
   }
 }
 
