@@ -14,6 +14,10 @@ h1, h2, h3, h4 {
   max-width: 700px;
 }
 
+.img-logo {
+  width: 250px;
+  height: 60px;
+}
 
 .p-Headling {
   color: black;
@@ -66,9 +70,55 @@ h1, h2, h3, h4 {
   transition: font-size .3s linear;
 }
 
-.a-item:hover{
+.a-item:hover {
   color:#00342C;
   font-size:28px;
+}
+
+.a-item:focus {
+  outline: none;
+  color: lightskyblue;
+}
+
+/**  CheckBox  **/
+
+.reset-button{
+  border-radius: 5px; 
+  border: solid 1px #333333;
+  background-color: #dedede;
+}
+
+.reset-button:hover {
+  background-color: #aaaaaa;
+}
+
+.reset-button:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
+}
+
+.reset-button:active {
+  background-color: #333333;
+  border-color: #333333;
+  color: #eeeeee ;
+}
+
+.input-checkbox {
+  border-radius: 5px; 
+  border: solid 1px #333333;
+  background-color: #dedede;  
+}
+
+.input-checkbox:hover {
+  outline: none;
+  border-radius: 1.5px;
+  box-shadow: 0 0 0 1.5px lightskyblue;
+}
+
+.input-checkbox:focus {
+  outline: none;
+  border-radius: 1.5px;
+  box-shadow: 0 0 0 1.5px lightskyblue;
 }
 
 /**  List  **/
@@ -82,6 +132,7 @@ h1, h2, h3, h4 {
   max-width: 700px;
   border: none;
 }
+
 .table thead th {
   font-weight: bold;
   text-align: left;
@@ -92,6 +143,7 @@ h1, h2, h3, h4 {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }
+
 .table tbody td {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -99,12 +151,15 @@ h1, h2, h3, h4 {
   font-size: 14px;
   vertical-align: top;
 }
+
 .table thead tr th:first-child, .table tbody tr td:first-child {
   border-left: none;
 }
+
 .table thead tr th:last-child, .table tbody tr td:last-child {
   border-right: none;
 }
+
 .table tbody tr:nth-child(even){
   background: #f3f3f3;
 }
