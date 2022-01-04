@@ -3,42 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Wrench Part List</title>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    $(window).bind("resize", resizeWindow);
-    function resizeWindow(e){
-      var newWindowWidth = $(window).width();
-
-      // Если ширина меньше 600 px, используется таблица стилей для мобильного
-      if(newWindowWidth < 600){
-        $("link[rel=stylesheet]").attr({href : "mobile.css"});
-      } else if(newWindowWidth > 600){
-        // Если ширина больше 600 px, используется таблица стилей для десктопа
-        $("link[rel=stylesheet]").attr({href : "style.css"});
-      }
-    }
-  });
-</script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <header class="header-container">
-    <div class="main-container">
-      <div class="navigation-container">
-        <div class="logo"><img class="img-logo" src="Wrench-logo.png" alt="Lol, there should be logo"></div>
-          <nav>
-            <a class="a-item" accesskey="a" href="index.html">All Parts |</a>
-            <a class="a-item" href="">Engine Parts |</a>
-            <a class="a-item" accesskey="s" href="Suspensions-parts.html">Suspensions Parts |</a>
-            <a class="a-item" accesskey="t" href="Tuning.html">Tuning</a>
-          </nav>
+ <header class="menu">
+        <div class="menu-wrap">
+            <img src="Wrench-logo.png" class="logo-img" alt="Logo">
+            <input type="checkbox" id="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="index.html">All Part</a></li>
+                    <li><a href="">Engine</a></li>
+                    <li><a href="Suspensions-parts.html">Suspensions</a></li>
+                    <li><a href="Tuning.html">Tuning</a></li>
+                </ul>
+            </nav>
+            <label for="checkbox">
+                <i class="fa fa-bars menu-icon"></i>
+            </label>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
   <p class="p-Headling">Bolts and Nuts list for Engine</p>
     <section class="section-table">
       <div class="table-style"> 

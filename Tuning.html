@@ -3,24 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Wrench Part List</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <header class="header-container">
-    <div class="main-container">
-      <div class="navigation-container">
-        <img class="img-logo" src="Wrench-logo.png" alt="Lol, there should be logo" name="">
-          <nav>
-            <a class="a-item" accesskey="a" href="index.html">All Parts |</a>
-            <a class="a-item" accesskey="e" href="Engine-parts.html">Engine Parts |</a>
-            <a class="a-item" accesskey="s" href="Suspensions-parts.html">Suspensions Parts |</a>
-            <a class="a-item" href="">Tuning</a>
-          </nav>
+ <header class="menu">
+    <div class="menu-wrap">
+      <img src="Wrench-logo.png" class="logo-img" alt="Logo">
+            <input type="checkbox" id="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="index.html">All Part</a></li>
+                    <li><a href="Engine-parts.html">Engine</a></li>
+                    <li><a href="Suspensions-parts.html">Suspensions</a></li>
+                    <li><a href="">Tuning</a></li>
+                </ul>
+            </nav>
+            <label for="checkbox">
+                <i class="fa fa-bars menu-icon"></i>
+            </label>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
     <p class="p-Headling"><a name="#top">Bolts and Nuts list for Tuning</a></p>
     <section class="section-table">
       <div class="table-style"> 
