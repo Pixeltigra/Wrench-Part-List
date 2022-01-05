@@ -34,12 +34,12 @@ h1, h2, h3, h4 {
   }
 
   .table {
-    width: 100%;
+    width: 812px;
     margin: 20px 0 10px 0;
   }
 
   .section-table {
-    width: 100%;
+    width: 812px;
     margin: 20px 0 10px 0;
   }
 
@@ -56,7 +56,13 @@ h1, h2, h3, h4 {
      width: 812px;
    }
    
-   
+   .menu-wrap {
+     width: 812px;
+   }
+
+   header {
+     width: 812px;
+   }
 
 }
 
