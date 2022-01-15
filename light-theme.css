@@ -162,6 +162,8 @@ nav ul li a:hover, nav ul li a:focus {
 /**  Buttons  **/
 
 .reset-button{
+  width: 50px;
+  height: 20px;
   padding: 1px 4px 1px 4px;
   font-weight: bold;
   border-radius: 5px; 
@@ -185,6 +187,9 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .input-checkbox {
+  width: 25px;
+  height: 20px;
+  margin-left: 10px;
   border-radius: 5px; 
   border: solid 1px #333333;
   background-color: #dedede;  
