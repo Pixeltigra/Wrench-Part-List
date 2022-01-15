@@ -1,0 +1,247 @@
+/**  Main const  **/
+
+body{
+  min-width: 360px;
+  margin: 0 auto;
+  font-family:  Tahoma, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  min-width: 400px;
+  max-width: 600px;
+}
+
+
+.img-logo {
+  width: 250px;
+  height: 60px;
+}
+
+.p-Headling {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  margin: 15px 0 10px 0;
+  font-weight: bold;
+}
+
+.p-Headling-2 {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  margin:  0 0 10px 0;
+  font-weight: bold;
+}
+
+/**  For Mobile  **/
+
+@media (max-width: 428px) {
+  body {
+    max-width: 100%;
+  }
+
+  .section-table {
+    width: 100%;
+    margin: 20px 0 10px 0;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .p-Headling {
+    font-size: 24px;
+    margin: 40px 0 10px 0;
+  }
+  
+  .p-Headling-2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+}
+
+/**  Header and Nav  **/
+
+header {
+    height: 70px;
+    background-color: #22292F;
+    padding: 10px 0;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.menu-icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+nav {
+    position: absolute;
+    background-color: #3D4852;
+    top:70px;
+    left:0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    /* Add your custom styles below to change appearance of links */
+    color: #dae1e7;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: lightskyblue;
+    outline: none;
+}
+
+#checkbox {
+    display: none;
+
+}
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 820px) { 
+    .menu-icon {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+
+    nav ul {
+        max-height: 70px;
+        padding: 15px 0;
+        text-align: right;
+    }
+
+    nav ul li {
+        display: inline-flex;
+        padding-left: 20px;
+    }
+
+    .table {
+      width: 620px;
+    }
+}
+
+/**  CheckBox in Table  **/
+
+.reset-button{
+  padding: 1px;
+  font-weight: bold;
+  border-radius: 5px; 
+  border: solid 1px #333333;
+  background-color: #dedede;
+}
+
+.reset-button:hover {
+  background-color: #aaaaaa;
+}
+
+.reset-button:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
+}
+
+.reset-button:active {
+  background-color: #333333;
+  border-color: #333333;
+  color: #eeeeee ;
+}
+
+.input-checkbox {
+  border-radius: 5px; 
+  border: solid 1px #333333;
+  background-color: #dedede;  
+}
+
+.input-checkbox:hover {
+  outline: none;
+  border-radius: 1.5px;
+  box-shadow: 0 0 0 1.5px lightskyblue;
+}
+
+.input-checkbox:focus {
+  outline: none;
+  border-radius: 1.5px;
+  box-shadow: 0 0 0 1.5px lightskyblue;
+}
+
+/**  List  **/
+
+/**
+.section-table {
+  margin: 0 25% 2% 25%;
+}
+**/
+
+.table {
+  border: none;
+  margin-bottom: 10px;
+}
+
+.table thead th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  background: #d8d8d8;
+  font-size: 14px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.table tbody td {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.table thead tr th:first-child, .table tbody tr td:first-child {
+  border-left: none;
+}
+
+.table thead tr th:last-child, .table tbody tr td:last-child {
+  border-right: none;
+}
+
+.table tbody tr:nth-child(even){
+  background: #f3f3f3;
+}
