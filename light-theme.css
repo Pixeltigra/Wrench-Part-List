@@ -159,10 +159,10 @@ nav ul li a:hover, nav ul li a:focus {
     }
 }
 
-/**  CheckBox in Table  **/
+/**  Buttons  **/
 
 .reset-button{
-  padding: 1px;
+  padding: 1px 4px 1px 4px;
   font-weight: bold;
   border-radius: 5px; 
   border: solid 1px #333333;
@@ -202,13 +202,7 @@ nav ul li a:hover, nav ul li a:focus {
   box-shadow: 0 0 0 1.5px lightskyblue;
 }
 
-/**  List  **/
-
-/**
-.section-table {
-  margin: 0 25% 2% 25%;
-}
-**/
+/**  Table  **/
 
 .table {
   border: none;
